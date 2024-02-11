@@ -1,0 +1,48 @@
+.faqCard {
+    border-bottom: 1px solid rgb(173, 173, 173);
+    overflow: hidden;
+}
+
+.questionBlock {
+    padding-bottom: 19.54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 13.81px;
+    padding-right: 14.8px;
+    cursor: pointer;
+}
+
+.question {
+    color: rgb(50, 49, 66);
+    font-family: Poppins, sans-serif;
+    font-size: 23.42px;
+    font-weight: 600;
+    line-height: 59.24px;
+}
+
+.iconBlock {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(108, 95, 188);
+    border-radius: 50%;
+}
+
+.answer {
+    color: rgb(104, 104, 104);
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    line-height: 160%;
+    padding: 0 8px 42.74px 8px;
+    transition: all 1s;
+    max-height: 300px;
+}
+
+.answerToggled {
+    transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+    max-height: 0;
+    padding: 0;
+}

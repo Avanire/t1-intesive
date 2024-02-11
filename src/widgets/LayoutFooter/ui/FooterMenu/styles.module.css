@@ -1,0 +1,4 @@
+.footerMenu {
+    display: flex;
+    column-gap: 70px;
+}

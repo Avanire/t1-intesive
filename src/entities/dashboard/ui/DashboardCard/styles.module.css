@@ -1,0 +1,53 @@
+.dashboardCard {
+    display: flex;
+    background: #FFFFFF;
+    border-radius: 12.04px;
+    padding: 6px 16.28px 10.1px 17.06px;
+    width: 345.17px;
+    height: 88.3px;
+}
+
+.dashboardCardActive {
+    composes: dashboardCard;
+    box-shadow: -9.84px 12.3px 20.51px 0 rgba(0, 0, 0, 0.15);
+}
+
+.info {
+    display: flex;
+    column-gap: 19.06px;
+    align-items: center;
+}
+
+.title {
+    color: var(--black);
+    font-family: Poppins, sans-serif;
+    font-size: 19.06px;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 0;
+    margin-bottom: 4.11px;
+}
+
+.status {
+    color: var(--black);
+    font-family: Poppins, sans-serif;
+    font-size: 12.04px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0;
+}
+
+.statusCancelled {
+    color: rgb(241, 83, 78);
+}
+
+.time {
+    color: var(--dark-grey);
+    font-family: Poppins, sans-serif;
+    font-size: 13.04px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0;
+    align-self: end;
+    margin-left: auto;
+}

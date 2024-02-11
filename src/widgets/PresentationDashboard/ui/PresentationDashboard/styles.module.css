@@ -1,0 +1,42 @@
+.presentDashboard {
+    display: flex;
+    column-gap: 141px;
+    border-bottom: 1px solid var(--grey-text);
+    padding-bottom: 134px;
+}
+
+.leftBlock {
+    flex: 0 1 570.71px;
+}
+
+.heading {
+    margin-bottom: 49px;
+}
+
+.dashboardCardList {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15.05px;
+}
+
+.rightBlock {
+    flex: 0 1 534px;
+    position: relative;
+}
+
+.shadow {
+    position: absolute;
+    width: 466.81px;
+    height: 359.28px;
+    border-radius: 13.28px;
+    filter: blur(121.7px);
+    background: rgb(50, 49, 66);
+    opacity: 0.2;
+    z-index: -1;
+    top: 211.32px;
+    left: 29.51px;
+}
+
+.rightBlockImg {
+    width: 100%;
+}

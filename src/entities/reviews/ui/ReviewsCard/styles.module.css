@@ -1,0 +1,62 @@
+.reviewCard {
+    background: #FFFFFF;
+    border-radius: 20.89px;
+    position: relative;
+    flex: 0 0 528px;
+    padding: 38px 43px;
+    height: fit-content;
+}
+
+.shadow {
+    position: absolute;
+    width: 574px;
+    height: 350px;
+    top: 31px;
+    border-radius: 20.12px;
+    filter: blur(184.39px);
+    background: rgb(50, 49, 66);
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.customer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 31.96px;
+    column-gap: 20.89px;
+}
+
+.customerName {
+    color: rgb(3, 3, 20);
+    font-family: Poppins, sans-serif;
+    font-size: 20.89px;
+    font-weight: 500;
+    line-height: 31.34px;
+}
+
+.timeWithUs {
+    color: rgb(94, 93, 93);
+    font-family: Quicksand, sans-serif;
+    font-size: 16.71px;
+    font-weight: 500;
+    line-height: 26.12px;
+    text-transform: capitalize;
+}
+
+.quotesIcon {
+    margin-left: auto;
+}
+
+.feedback {
+    color: rgb(99, 99, 99);
+    font-family: Poppins, sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 26.12px;
+    margin-bottom: 39px;
+}
+
+.stars {
+    display: flex;
+    column-gap: 5.75px;
+}

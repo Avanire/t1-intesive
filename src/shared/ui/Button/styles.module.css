@@ -1,0 +1,31 @@
+.button {
+    border: 1.5px solid var(--color-primary);
+    border-radius: 12.41px;
+    padding: 18px 31px 17px 30px;
+    font-family: Poppins, sans-serif;
+    font-size: 16.27px;
+    font-weight: 500;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    column-gap: 14.91px;
+    cursor: pointer;
+}
+
+.buttonThemePrimary {
+    background: var(--color-primary);
+    color: var(--white);
+}
+
+.buttonThemeSecondary {
+    background: var(--white);
+    color: var(--color-primary);
+}
+
+.buttonThemeWithIcon {
+    composes: buttonThemePrimary;
+    padding: 18px 26px 17.91px 26px;
+    border-radius: 14.68px;
+    font-size: 18.06px;
+    line-height: 22.58px;
+}

@@ -1,0 +1,31 @@
+@import "./styles/index.css";
+
+body {
+  background: rgb(249, 249, 249);
+  margin: 0;
+  font-family: Inter, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
+p {
+  color: rgb(103, 103, 103);
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0;
+}
+
+strong {
+  color: rgb(97, 85, 174);
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}
