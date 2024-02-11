@@ -13,3 +13,9 @@
 .li:not(:last-child) {
     margin-bottom: 26.94px;
 }
+
+@media (max-width: 580px) {
+    .li {
+        font-size: 16px;
+    }
+}

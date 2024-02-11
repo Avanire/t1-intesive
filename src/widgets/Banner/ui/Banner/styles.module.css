@@ -13,3 +13,23 @@
     flex: 0 0 645px;
     height: 100%;
 }
+
+@media (max-width: 1404px) {
+    .descriptionBlock {
+        flex-shrink: 1;
+    }
+
+    .bannerImgBlock {
+        flex-shrink: 1;
+    }
+}
+
+@media (max-width: 1100px) {
+    .banner {
+        height: auto;
+    }
+
+    .bannerImgBlock {
+        display: none;
+    }
+}

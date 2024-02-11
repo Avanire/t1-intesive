@@ -60,3 +60,31 @@
     display: flex;
     column-gap: 5.75px;
 }
+
+@media (max-width: 580px) {
+    .reviewCard {
+        padding: 20px 12px;
+        flex-shrink: 1;
+    }
+
+    .reviewCard:not(:first-child) {
+        display: none;
+    }
+
+    .feedback {
+        font-size: 16px;
+    }
+
+    .customerName {
+        font-size: 18px;
+    }
+
+    .customer {
+        flex-direction: column;
+        row-gap: 8px;
+    }
+
+    .quotesIcon {
+        margin-left: 0;
+    }
+}

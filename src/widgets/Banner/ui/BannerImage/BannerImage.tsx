@@ -17,7 +17,7 @@ export const BannerImage: FC = () => {
                 />
             </div>
             <div className={styles.graph}>
-                <img src={graph} alt="" />
+                <img src={graph} alt="" width={209} />
             </div>
         </div>
     )

@@ -7,3 +7,11 @@
     margin: 48px 96px 49.5px 96px;
     border-bottom: 1px solid var(--grey-text);
 }
+
+@media (max-width: 580px) {
+    .header {
+        margin: 24px 15px 26px 15px;
+        column-gap: normal;
+        justify-content: space-between;
+    }
+}

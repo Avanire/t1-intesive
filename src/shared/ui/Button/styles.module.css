@@ -29,3 +29,9 @@
     font-size: 18.06px;
     line-height: 22.58px;
 }
+
+@media (max-width: 580px) {
+    .button {
+        padding: 12px 20px;
+    }
+}

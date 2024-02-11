@@ -42,6 +42,7 @@ export const ReviewsCard: FC<Props> = (props) => {
                         src={quotesIcon}
                         alt=""
                         className={styles.quotesIcon}
+                        width={59}
                     />
                 </div>
             )}

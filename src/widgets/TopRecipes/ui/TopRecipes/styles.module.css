@@ -18,3 +18,21 @@
     display: flex;
     justify-content: flex-end;
 }
+
+@media (max-width: 1100px) {
+    .topRecipesList {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 580px) {
+    .topRecipes {
+        padding-bottom: 58px;
+    }
+
+    .heading {
+        margin-bottom: 42px;
+    }
+}

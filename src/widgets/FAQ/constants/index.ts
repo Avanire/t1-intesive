@@ -20,7 +20,7 @@ export const faqList = [
         answer: 'You Can Get Information By Contacting Our Support Team Have 24/7 Service. What’s The Difference Between Free And Paid Plan ?',
     },
     {
-        id: 4,
+        id: 5,
         question: 'Do you offer discounts or promotions?',
         answer: 'You Can Get Information By Contacting Our Support Team Have 24/7 Service. What’s The Difference Between Free And Paid Plan ?',
     },

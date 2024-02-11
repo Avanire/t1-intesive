@@ -6,3 +6,9 @@
 .socialIcon:hover path {
     fill: var(--color-primary);
 }
+
+@media (max-width: 580px) {
+    .socialBlock {
+        order: -1;
+    }
+}

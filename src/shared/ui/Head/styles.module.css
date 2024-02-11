@@ -3,7 +3,7 @@
     color: #201F1F;
     font-size: 50.92px;
     font-weight: 700;
-    line-height: 58.2px;
+    line-height: 120%;
     letter-spacing: 0;
 }
 
@@ -24,4 +24,18 @@
 
 .highlight {
     color: #5C4EAE;
+}
+
+@media (max-width: 580px) {
+    .h2 {
+        font-size: 28px;
+    }
+
+    .h1 {
+        font-size: 43px;
+    }
+
+    .h3 {
+        font-size: 25px;
+    }
 }

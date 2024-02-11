@@ -25,3 +25,10 @@
     flex-direction: column;
     row-gap: 28.75px;
 }
+
+@media (max-width: 580px) {
+    .heading::after {
+        top: -44px;
+        right: -10px;
+    }
+}

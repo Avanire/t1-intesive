@@ -3,7 +3,7 @@
     border-radius: 30.02px;
     box-shadow: 5.95px 71.35px 35.67px 0 rgba(229, 229, 229, 0.7);
     background: #FFFFFF;
-    width: 396px;
+    flex: 0 1 396px;
     overflow: hidden;
 }
 
@@ -21,6 +21,10 @@
 
 .imageBlock {
     transition: transform 0.25s linear;
+}
+
+.image {
+    width: 100%;
 }
 
 .recipesCard:hover .imageBlock {
@@ -87,4 +91,14 @@
     display: flex;
     align-items: center;
     column-gap: 6.45px;
+}
+
+@media (max-width: 580px) {
+    .recipesCard {
+        flex-grow: 1;
+    }
+
+    .name {
+        font-size: 20px;
+    }
 }

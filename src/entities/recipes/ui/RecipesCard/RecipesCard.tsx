@@ -15,7 +15,12 @@ export const RecipesCard: FC<Props> = (props) => {
     return (
         <div className={styles.recipesCard}>
             <div className={styles.imageBlock}>
-                <img src={props.image} alt={props.name} />
+                <img
+                    src={props.image}
+                    alt={props.name}
+                    className={styles.image}
+                    width={396}
+                />
             </div>
             <div className={styles.info}>
                 <div className={styles.type}>{props.type}</div>
