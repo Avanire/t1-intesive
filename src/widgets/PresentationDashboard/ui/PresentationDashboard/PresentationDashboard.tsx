@@ -31,8 +31,8 @@ export const PresentationDashboard: FC = () => {
                     src={savingsImg}
                     alt="Purchases Image"
                     className={styles.rightBlockImg}
+                    width={534}
                 />
-                <div className={styles.shadow}></div>
             </div>
         </div>
     )

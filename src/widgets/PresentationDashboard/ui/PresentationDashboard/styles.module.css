@@ -24,19 +24,29 @@
     position: relative;
 }
 
-.shadow {
-    position: absolute;
-    width: 466.81px;
-    height: 359.28px;
-    border-radius: 13.28px;
-    filter: blur(121.7px);
-    background: rgb(50, 49, 66);
-    opacity: 0.2;
-    z-index: -1;
-    top: 211.32px;
-    left: 29.51px;
-}
-
 .rightBlockImg {
     width: 100%;
+    box-shadow: 0 105px 130px -137px rgb(50, 49, 66);
+}
+
+@media (max-width: 1100px) {
+    .presentDashboard {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 34px;
+    }
+
+    .heading {
+        text-align: center;
+    }
+
+    .dashboardCardList {
+        align-items: center;
+    }
+}
+
+@media (max-width: 580px) {
+    .presentDashboard {
+        padding-bottom: 60px;
+    }
 }

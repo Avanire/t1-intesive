@@ -16,4 +16,23 @@
     position: relative;
     left: calc(528px + 46px);
     bottom: 17px;
+    width: 667px;
+}
+
+.dividerImg {
+    width: 100%;
+}
+
+@media (max-width: 1100px) {
+    .divider {
+        width: 320px;
+    }
+}
+
+@media (max-width: 580px) {
+    .divider {
+        left: 0;
+        bottom: -10px;
+        width: 100%;
+    }
 }

@@ -14,3 +14,9 @@
     display: flex;
     column-gap: 18px;
 }
+
+@media (max-width: 580px) {
+    .p {
+        margin-bottom: 32px;
+    }
+}

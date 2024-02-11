@@ -18,3 +18,9 @@
     letter-spacing: 2px;
     text-transform: uppercase;
 }
+
+@media (max-width: 580px) {
+    .title {
+        font-size: 12px;
+    }
+}

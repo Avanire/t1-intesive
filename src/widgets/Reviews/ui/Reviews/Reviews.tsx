@@ -28,7 +28,12 @@ export const Reviews: FC = () => {
                     ))}
                 </div>
                 <div className={styles.divider}>
-                    <img src={divider} alt="" />
+                    <img
+                        src={divider}
+                        alt=""
+                        width={667}
+                        className={styles.dividerImg}
+                    />
                 </div>
             </div>
         </div>

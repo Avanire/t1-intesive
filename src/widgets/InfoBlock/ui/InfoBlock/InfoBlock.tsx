@@ -8,8 +8,13 @@ import styles from './styles.module.css'
 export const InfoBlock: FC = () => {
     return (
         <div className={styles.infoBlock}>
-            <div className={styles.image}>
-                <img src={image} alt="Premium Quality For Your Health" />
+            <div className={styles.imageBlock}>
+                <img
+                    src={image}
+                    alt="Premium Quality For Your Health"
+                    className={styles.image}
+                    width={304}
+                />
             </div>
             <div className={styles.description}>
                 <div className={styles.heading}>

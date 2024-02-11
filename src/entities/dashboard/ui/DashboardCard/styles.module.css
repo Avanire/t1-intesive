@@ -51,3 +51,18 @@
     align-self: end;
     margin-left: auto;
 }
+
+
+@media (max-width: 580px) {
+    .dashboardCard {
+        width: 290px;
+    }
+
+    .title {
+        font-size: 17px;
+    }
+
+    .time {
+        font-size: 10px;
+    }
+}

@@ -6,3 +6,10 @@
     margin-bottom: 57.5px;
     border-bottom: 1px solid rgba(129, 129, 129, 0.25);
 }
+
+@media (max-width: 580px) {
+    .footerTop {
+        flex-direction: column;
+        row-gap: 48px;
+    }
+}
