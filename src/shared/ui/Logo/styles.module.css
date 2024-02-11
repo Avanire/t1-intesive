@@ -1,0 +1,12 @@
+.logo {
+    display: flex;
+    align-items: center;
+    column-gap: 11px;
+    text-decoration: none;
+}
+.logoDescr {
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    line-height: 130%;
+    color: var(--color-primary);
+}

@@ -1,0 +1,9 @@
+.header {
+    display: flex;
+    align-items: center;
+    column-gap: 103.12px;
+    padding-top: 9px;
+    padding-bottom: 35.19px;
+    margin: 48px 96px 49.5px 96px;
+    border-bottom: 1px solid var(--grey-text);
+}

@@ -1,0 +1,8 @@
+.footerTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 28.5px;
+    margin-bottom: 57.5px;
+    border-bottom: 1px solid rgba(129, 129, 129, 0.25);
+}

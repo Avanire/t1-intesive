@@ -1,0 +1,16 @@
+.subtitle {
+    margin-bottom: 18px;
+}
+
+.h1 {
+    margin-bottom: 16px;
+}
+
+.p {
+    margin-bottom: 53px;
+}
+
+.buttonBlock {
+    display: flex;
+    column-gap: 18px;
+}

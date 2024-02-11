@@ -1,0 +1,8 @@
+.socialBlock {
+    display: flex;
+    column-gap: 53.8px;
+}
+
+.socialIcon:hover path {
+    fill: var(--color-primary);
+}

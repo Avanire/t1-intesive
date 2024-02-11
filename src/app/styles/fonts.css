@@ -1,0 +1,188 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Inter/Inter-Regular.woff2') format('woff2'),
+    url('../fonts/Inter/Inter-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/Inter/Inter-Medium.woff2') format('woff2'),
+    url('../fonts/Inter/Inter-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/Inter/Inter-SemiBold.woff2') format('woff2'),
+    url('../fonts/Inter/Inter-SemiBold.woff') format('woff');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/Inter/Inter-Bold.woff2') format('woff2'),
+    url('../fonts/Inter/Inter-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Monrope';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Manrope/Manrope-Regular.woff2') format('woff2'),
+    url('../fonts/Manrope/Manrope-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Monrope';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/Manrope/Manrope-Medium.woff2') format('woff2'),
+    url('../fonts/Manrope/Manrope-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Monrope';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/Manrope/Manrope-SemiBold.woff2') format('woff2'),
+    url('../fonts/Manrope/Manrope-SemiBold.woff') format('woff');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Monrope';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/Manrope/Manrope-Bold.woff2') format('woff2'),
+    url('../fonts/Manrope/Manrope-Bold.woff2') format('woff');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Poppins/Poppins-Regular.woff2') format('woff2'),
+    url('../fonts/Poppins/Poppins-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/Poppins/Poppins-Medium.woff2') format('woff2'),
+    url('../fonts/Poppins/Poppins-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/Poppins/Poppins-SemiBold.woff2') format('woff2'),
+    url('../fonts/Poppins/Poppins-SemiBold.woff') format('woff');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/Poppins/Poppins-Bold.woff2') format('woff2'),
+    url('../fonts/Poppins/Poppins-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../fonts/Poppins/Poppins-Italic.woff2') format('woff2'),
+    url('../fonts/Poppins/Poppins-Italic.woff2') format('woff');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'PublicSans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/PublicSans/PublicSans-Regular.woff2') format('woff2'),
+    url('../fonts/PublicSans/PublicSans-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'PublicSans';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/PublicSans/PublicSans-Medium.woff2') format('woff2'),
+    url('../fonts/PublicSans/PublicSans-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'PublicSans';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/PublicSans/PublicSans-SemiBold.woff2') format('woff2'),
+    url('../fonts/PublicSans/PublicSans-SemiBold.woff') format('woff');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'PublicSans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/PublicSans/PublicSans-Bold.woff2') format('woff2'),
+    url('../fonts/PublicSans/PublicSans-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Quicksand/Quicksand-Regular.woff2') format('woff2'),
+    url('../fonts/Quicksand/Quicksand-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/Quicksand/Quicksand-Medium.woff2') format('woff2'),
+    url('../fonts/Quicksand/Quicksand-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/Quicksand/Quicksand-SemiBold.woff2') format('woff2'),
+    url('../fonts/Quicksand/Quicksand-SemiBold.woff') format('woff');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/Quicksand/Quicksand-Bold.woff2') format('woff2'),
+    url('../fonts/Quicksand/Quicksand-Bold.woff2') format('woff');
+}

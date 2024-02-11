@@ -1,0 +1,26 @@
+.advantages {
+    display: flex;
+    padding: 49px 0 48.5px 0;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: url("../../../../assets/images/adv-bg.svg") no-repeat;
+}
+
+.advantageBg {
+    background: rgb(92, 78, 174);
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+}
+
+.advantage {
+    flex: 0 0 272px;
+}
+
+.advantage:not(:last-child) {
+    border-right: 1px solid rgba(197, 197, 197, 0.15);
+    padding-right: 66.5px;
+    margin-right: 65.5px;
+}

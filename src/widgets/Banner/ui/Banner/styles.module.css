@@ -1,0 +1,15 @@
+.banner {
+    display: flex;
+    column-gap: 37px;
+    height: 540px;
+    align-items: center;
+}
+
+.descriptionBlock {
+    flex: 0 0 568px;
+}
+
+.bannerImgBlock {
+    flex: 0 0 645px;
+    height: 100%;
+}

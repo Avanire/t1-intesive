@@ -1,0 +1,23 @@
+:root {
+    box-sizing: border-box;
+    --color-primary: #6C5FBC;
+    --white: #FFFFFF;
+    --gray-3: #828282;
+    --grey-text: #CBCBCB;
+    --gray-2: #F4F4F6;
+    --grayscale-50: #FAFAFA;
+    --light-primary-color: #DBD9EE;
+    --grey: #8E97A6;
+    --greyscale-900: #1A202C;
+    --dark-grey: #ACADB9;
+    --text: #FFFFFF;
+    --black: #323142;
+    --amber-500: #F59E0B;
+    --blue-gray-300: #CBD5E1;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}

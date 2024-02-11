@@ -1,0 +1,90 @@
+.recipesCard {
+    border: var(--gray-2);
+    border-radius: 30.02px;
+    box-shadow: 5.95px 71.35px 35.67px 0 rgba(229, 229, 229, 0.7);
+    background: #FFFFFF;
+    width: 396px;
+    overflow: hidden;
+}
+
+.recipesCard:hover .favorite {
+    opacity: 1;
+}
+
+.info {
+    text-align: left;
+    padding: 11.17px 37.07px 17.98px 37.07px;
+    background: #FFFFFF;
+    border-bottom-left-radius: 30.02px;
+    border-bottom-right-radius: 30.02px;
+}
+
+.imageBlock {
+    transition: transform 0.25s linear;
+}
+
+.recipesCard:hover .imageBlock {
+    transform: translateY(-40px);
+}
+
+.type {
+    display: inline-block;
+    border-radius: 5.4px;
+    background: rgb(247, 237, 208);
+    padding: 2.83px 6.39px 2.26px 6.39px;
+    margin-right: auto;
+    color: rgb(218, 163, 26);
+    font-family: Poppins, sans-serif;
+    font-size: 12.78px;
+    line-height: 19px;
+}
+
+.headingBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name {
+    color: var(--black);
+    font-family: Poppins, sans-serif;
+    font-size: 25.79px;
+    font-weight: 600;
+    line-height: 41.9px;
+}
+
+.favorite {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    background: var(--light-primary-color);
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.25s linear;
+}
+
+.bottomBlock {
+    display: flex;
+    column-gap: 6.45px;
+    align-items: center;
+    color: var(--grey);
+    font-family: Manrope, sans-serif;
+    font-size: 19.34px;
+    line-height: 25.79px;
+}
+
+.separator {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--grey);
+}
+
+.ratingBlock {
+    display: flex;
+    align-items: center;
+    column-gap: 6.45px;
+}
