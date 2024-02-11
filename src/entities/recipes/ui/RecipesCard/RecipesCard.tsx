@@ -12,6 +12,10 @@ type Props = {
 }
 
 export const RecipesCard: FC<Props> = (props) => {
+    const handleAddFavorite = () => {
+        console.log(`${props.name} added`)
+    }
+
     return (
         <div className={styles.recipesCard}>
             <div className={styles.imageBlock}>
@@ -26,7 +30,10 @@ export const RecipesCard: FC<Props> = (props) => {
                 <div className={styles.type}>{props.type}</div>
                 <div className={styles.headingBlock}>
                     <div className={styles.name}>{props.name}</div>
-                    <div className={styles.favorite}>
+                    <div
+                        className={styles.favorite}
+                        onClick={handleAddFavorite}
+                    >
                         <img src={bookmarkIcon} alt="" />
                     </div>
                 </div>

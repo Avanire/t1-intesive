@@ -4,6 +4,7 @@
     box-shadow: 5.95px 71.35px 35.67px 0 rgba(229, 229, 229, 0.7);
     background: #FFFFFF;
     flex: 0 1 396px;
+    max-width: 396px;
     overflow: hidden;
 }
 
