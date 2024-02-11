@@ -46,7 +46,9 @@ export const ReviewsCard: FC<Props> = (props) => {
                     />
                 </div>
             )}
-            <div className={styles.feedback}>“ {props.feedback} ”</div>
+            <div className={styles.feedback}>
+                &ldquo; {props.feedback} &rdquo;
+            </div>
             <div className={styles.stars}>
                 {Array(reviewStarCount)
                     .fill(0)
