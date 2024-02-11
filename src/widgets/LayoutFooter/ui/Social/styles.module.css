@@ -1,6 +1,6 @@
 .socialBlock {
     display: flex;
-    column-gap: 53.8px;
+    column-gap: 58px;
 }
 
 .socialIcon:hover path {

@@ -87,4 +87,8 @@
     .quotesIcon {
         margin-left: 0;
     }
+
+    .shadow {
+        display: none;
+    }
 }

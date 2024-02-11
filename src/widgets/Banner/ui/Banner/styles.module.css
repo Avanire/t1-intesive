@@ -1,6 +1,6 @@
 .banner {
     display: flex;
-    column-gap: 37px;
+    column-gap: 73px;
     height: 540px;
     align-items: center;
 }
@@ -10,7 +10,7 @@
 }
 
 .bannerImgBlock {
-    flex: 0 0 645px;
+    flex: 0 0 603px;
     height: 100%;
 }
 

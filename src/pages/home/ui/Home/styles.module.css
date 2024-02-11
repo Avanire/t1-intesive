@@ -1,5 +1,5 @@
 .bannerBlock {
-    margin: 0 58.52px 89px 96px;
+    margin: 0 58.52px 127px 96px;
 }
 
 .advantagesBlock {
@@ -7,23 +7,23 @@
 }
 
 .infoBlock {
-    margin: 0 97px 100.5px;
+    margin: 0 97px 74.5px;
 }
 
 .topRecipesBlock {
-    margin: 0 97px 134.5px;
+    margin: 0 97px 120px;
 }
 
 .presentationDashboardBlock {
-    margin: 0 79px 116.5px 115px;
+    margin: 0 79px 91px 112px;
 }
 
 .reviewsBlock {
-    margin: 0 0 224px 117px;
+    margin: 0 0 237px 117px;
 }
 
 .faqBlock {
-    margin: 0 144px 189.51px 144px;
+    margin: 0 144px 163px 144px;
 }
 
 @media (max-width: 1100px) {

@@ -1,10 +1,11 @@
 .advantage {
     text-align: center;
+    padding: 8px 0 6.2px 0;
 }
 
 .title {
     color: #FFFFFF;
-    font-family: Public Sans, sans-serif;
+    font-family: PublicSans, sans-serif;
     font-size: 43.2px;
     font-weight: 700;
     line-height: 54px;
