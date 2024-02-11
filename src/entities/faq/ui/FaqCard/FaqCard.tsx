@@ -20,6 +20,7 @@ export const FaqCard: FC<Props> = (props) => {
         <div className={styles.faqCard}>
             <div
                 aria-expanded={isOpen}
+                aria-label="FAQ Card"
                 onClick={handleClick}
                 className={styles.questionBlock}
             >
