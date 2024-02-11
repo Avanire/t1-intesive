@@ -21,7 +21,8 @@
 
 .advantage:not(:last-child) {
     border-right: 1px solid rgba(197, 197, 197, 0.15);
-    padding-right: 66.5px;
+    padding-right: 33.25px;
+    padding-left: 33.25px;
     margin-right: 65.5px;
 }
 

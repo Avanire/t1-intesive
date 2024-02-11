@@ -1,15 +1,15 @@
 .infoBlock {
     display: flex;
     align-items: center;
-    column-gap: 300px;
+    column-gap: 283px;
     border-bottom: 1px solid var(--grey-text);
-    padding-bottom: 119.5px;
+    padding-bottom: 112.5px;
     padding-left: 111px;
 }
 
 .imageBlock {
     position: relative;
-    flex: 0 0 304px;
+    flex: 0 0 308px;
 }
 
 .imageBlock::after {
@@ -27,7 +27,7 @@
 }
 
 .description {
-    flex: 0 1 560px;
+    flex: 0 1 520px;
 }
 
 .heading {
@@ -35,7 +35,7 @@
 }
 
 .list {
-    margin-bottom: 66px;
+    margin-bottom: 69px;
 }
 
 .button {
@@ -49,8 +49,8 @@
     background-image: url("data:image/svg+xml,%0A%3Csvg width='169.252930' height='60.026367' viewBox='0 0 169.253 60.0264' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs/%3E%3Cpath id='Vector 14' d='M167.926 5.08594C167.926 5.08594 158.592 33.75 134.887 37.4902C116.623 40.3711 95.7285 30.7852 95.6084 15.5898C95.5713 10.9521 99.3379 1.91211 107.374 1.35547C114.899 0.834961 118.299 7.41016 119.863 11.7402C126.389 29.8086 105.637 44.8145 86.542 46.9229C70.123 48.7354 51.71 40.8467 50.7656 24.3545C50.459 19.002 53.3369 14.8984 59.2764 13.3887C65.0654 11.917 68.9863 15.7627 71.5186 21.1729C80.4189 40.1943 52.1553 60.1035 33.502 58.6182C18.8613 57.4521 2.04785 39.0693 2.04785 39.0693M6.29199 51.1787L2.04785 39.0693L13.9482 41.8408' stroke='%236C5FBC' stroke-opacity='1.000000' stroke-width='2.650000'/%3E%3C/svg%3E%0A");
     width: 169px;
     height: 60px;
-    right: -135px;
-    bottom: -55px;
+    right: -145px;
+    bottom: -43px;
 }
 
 @media (max-width: 1404px) {

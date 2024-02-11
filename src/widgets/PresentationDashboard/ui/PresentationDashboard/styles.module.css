@@ -2,7 +2,7 @@
     display: flex;
     column-gap: 141px;
     border-bottom: 1px solid var(--grey-text);
-    padding-bottom: 134px;
+    padding-bottom: 129px;
 }
 
 .leftBlock {
@@ -10,7 +10,8 @@
 }
 
 .heading {
-    margin-bottom: 49px;
+    margin-bottom: 46px;
+    margin-left: 10px;
 }
 
 .dashboardCardList {
