@@ -1,13 +1,25 @@
-import { FC } from 'react'
-import { Head, Link } from '../../../../shared/ui'
+import { FC, useMemo } from 'react'
+import { Head } from '../../../../shared/ui'
 import styles from './styles.module.css'
-import { useTopRecipesQuery } from '../../../../entities/recipes/api/recipesApi'
-import { RecipesCard } from 'entities/recipes'
-import linkArrowIcon from '../../../../assets/images/link-arrow.svg'
+import {
+    RecipesCard,
+    useRecipesByMealTypeQuery,
+} from '../../../../entities/recipes'
+import Skeleton from 'react-loading-skeleton'
+import _ from 'lodash'
 
 export const TopRecipes: FC = () => {
-    const { data: recipes = [] } = useTopRecipesQuery()
-    const items = recipes.slice(0, 3)
+    const { data = [], isFetching } = useRecipesByMealTypeQuery('lunch')
+
+    const top3Recipes = useMemo(() => {
+        const sortedData = _.sortBy(data, [
+            function (o) {
+                return -o.rating
+            },
+        ])
+
+        return sortedData.slice(0, 3)
+    }, [data])
 
     return (
         <div className={styles.topRecipes}>
@@ -17,14 +29,19 @@ export const TopRecipes: FC = () => {
                 </Head>
             </div>
             <div className={styles.topRecipesList}>
-                {items.map((recipe) => (
-                    <RecipesCard key={recipe.id} {...recipe} />
-                ))}
-            </div>
-            <div className={styles.link}>
-                <Link url="#" icon={linkArrowIcon}>
-                    View All
-                </Link>
+                {isFetching ? (
+                    <Skeleton
+                        containerClassName={styles.topRecipesList}
+                        count={3}
+                        width={320}
+                        height={297}
+                        inline={true}
+                    />
+                ) : (
+                    top3Recipes.map((recipe) => (
+                        <RecipesCard key={recipe.id} {...recipe} />
+                    ))
+                )}
             </div>
         </div>
     )

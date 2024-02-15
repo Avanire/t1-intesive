@@ -1,12 +1,17 @@
 export const footerMenuList = [
     {
         id: 1,
-        name: 'About Us',
-        url: 'about-us',
+        name: 'Recipes',
+        url: '/#top-recipes',
     },
     {
         id: 2,
-        name: 'Contact',
-        url: 'contact',
+        name: 'FAQ',
+        url: '/#faq',
+    },
+    {
+        id: 3,
+        name: 'Blog',
+        url: '/blog',
     },
 ]

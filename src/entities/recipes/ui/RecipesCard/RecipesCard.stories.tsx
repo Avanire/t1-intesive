@@ -15,10 +15,11 @@ const recipe = topRecipesList[0]
 
 export const Default: Story = {
     args: {
-        image: recipe.image,
-        type: recipe.type,
+        id: recipe.id,
         name: recipe.name,
-        time: recipe.time,
+        image: recipe.image,
+        tags: recipe.type,
+        cookTimeMinutes: recipe.time,
         rating: recipe.rating,
     },
 }

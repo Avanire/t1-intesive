@@ -4,10 +4,11 @@ import bookmarkIcon from '../../../../assets/images/Book-Mark.svg'
 import styles from './styles.module.css'
 
 type Props = {
-    image: string
-    type: string
+    id: number
     name: string
-    time: string
+    image: string
+    tags: Array<string>
+    cookTimeMinutes: number
     rating: number
 }
 
@@ -27,7 +28,13 @@ export const RecipesCard: FC<Props> = (props) => {
                 />
             </div>
             <div className={styles.info}>
-                <div className={styles.type}>{props.type}</div>
+                <div className={styles.tags}>
+                    {props.tags.map((item) => (
+                        <div key={item} className={styles.type}>
+                            {item}
+                        </div>
+                    ))}
+                </div>
                 <div className={styles.headingBlock}>
                     <div className={styles.name}>{props.name}</div>
                     <div
@@ -38,7 +45,9 @@ export const RecipesCard: FC<Props> = (props) => {
                     </div>
                 </div>
                 <div className={styles.bottomBlock}>
-                    <span className={styles.time}>{props.time}</span>
+                    <span className={styles.time}>
+                        {props.cookTimeMinutes}min
+                    </span>
                     <span className={styles.separator}></span>
                     <span className={styles.ratingBlock}>
                         <img src={starIcon} alt="" />

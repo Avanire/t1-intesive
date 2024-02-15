@@ -1,12 +1,18 @@
 import { baseApi } from '../../../shared/api'
 import { Recipes } from '../model/types'
+import { mapRecipes } from '../lib/mapRecipes'
+import { RecipesDto } from './types'
 
-const recipesApi = baseApi.injectEndpoints({
+export const recipesApi = baseApi.injectEndpoints({
     endpoints: (build) => ({
-        getRecipesByMealType: build.query<Recipes, string>({
-            query: (name) => `recipes/meal-type/${name}`,
+        recipesByMealType: build.query<RecipesDto[], string>({
+            query: (name) => ({
+                url: `recipes/meal-type/${name}`,
+            }),
+            transformResponse: (response: Recipes) =>
+                response.recipes.map(mapRecipes),
         }),
     }),
 })
 
-export const { useGetRecipesByMealTypeQuery } = recipesApi
+export const { useRecipesByMealTypeQuery } = recipesApi

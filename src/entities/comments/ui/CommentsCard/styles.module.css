@@ -5,18 +5,7 @@
     flex: 0 0 528px;
     padding: 38px 43px;
     height: fit-content;
-}
-
-.shadow {
-    position: absolute;
-    width: 574px;
-    height: 350px;
-    top: 31px;
-    border-radius: 20.12px;
-    filter: blur(184.39px);
-    background: rgb(50, 49, 66);
-    opacity: 0.2;
-    z-index: -1;
+    box-shadow: 0 23px 60px -29px #000;
 }
 
 .customer {

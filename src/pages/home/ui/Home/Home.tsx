@@ -20,7 +20,7 @@ const Home: FC = () => {
             <section className={styles.infoBlock}>
                 <InfoBlock />
             </section>
-            <section className={styles.topRecipesBlock}>
+            <section className={styles.topRecipesBlock} id="top-recipes">
                 <TopRecipes />
             </section>
             <section className={styles.presentationDashboardBlock}>
@@ -29,7 +29,7 @@ const Home: FC = () => {
             <section className={styles.reviewsBlock}>
                 <Reviews />
             </section>
-            <section className={styles.faqBlock}>
+            <section className={styles.faqBlock} id="faq">
                 <FAQ />
             </section>
         </>
