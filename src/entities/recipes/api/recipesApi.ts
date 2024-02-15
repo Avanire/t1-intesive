@@ -1,15 +1,12 @@
-import { topRecipesList } from '../constants'
+import { baseApi } from '../../../shared/api'
+import { Recipes } from '../model/types'
 
-type RecipesApi = {
-    data: typeof topRecipesList
-    isLoading: boolean
-}
+const recipesApi = baseApi.injectEndpoints({
+    endpoints: (build) => ({
+        getRecipesByMealType: build.query<Recipes, string>({
+            query: (name) => `recipes/meal-type/${name}`,
+        }),
+    }),
+})
 
-const recipesApi = (): RecipesApi => {
-    return {
-        data: topRecipesList,
-        isLoading: false,
-    }
-}
-
-export const useTopRecipesQuery = recipesApi
+export const { useGetRecipesByMealTypeQuery } = recipesApi
