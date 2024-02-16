@@ -4,6 +4,7 @@
     background: rgb(255, 255, 255);
     padding: 26px 24px 26px 20px;
     flex: 0 1 349px;
+    text-decoration: none;
 }
 
 .title {
@@ -20,22 +21,6 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 24px;
-}
-
-.tag {
-    color: rgb(141, 141, 141);
-    font-family: Poppins, sans-serif;
-    font-size: 12px;
-    line-height: 18px;
-}
-
-.ratingBlock {
-    display: flex;
-    align-items: center;
-    color: var(--grey);
-    font-family: Manrope, sans-serif;
-    font-size: 19.34px;
-    line-height: 25.79px;
 }
 
 .body {

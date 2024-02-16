@@ -21,6 +21,13 @@
     font-weight: 600;
 }
 
+.h4 {
+    composes: h2;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 120%;
+}
+
 .highlight {
     color: #5C4EAE;
 }

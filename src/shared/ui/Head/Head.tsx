@@ -3,8 +3,8 @@ import styles from './styles.module.css'
 
 export type Props = {
     children: string
-    highlightNumber: number
-    head: 'h1' | 'h2' | 'h3'
+    highlightNumber?: number
+    head: 'h1' | 'h2' | 'h3' | 'h4'
 }
 
 export const Head: FC<Props> = (props) => {

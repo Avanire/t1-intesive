@@ -1,9 +1,11 @@
 import { FC, useId } from 'react'
 import styles from './styles.module.css'
-import starIcon from '../../../../assets/images/Star.svg'
 import TextTruncate from 'react-text-truncate'
+import { Link } from 'react-router-dom'
+import { HashTag, ReactionCount } from '../../../../shared/ui'
 
 type Props = {
+    id: number
     title: string
     reactions: number
     tags: Array<string>
@@ -14,21 +16,19 @@ export const PostCategoryCard: FC<Props> = (props) => {
     const id = useId()
 
     return (
-        <div className={styles.categoryPostCard}>
+        <Link to={`/blog/${props.id}`} className={styles.categoryPostCard}>
             <div className={styles.title}>{props.title}</div>
             <div className={styles.infoBlock}>
                 <div>
                     {props.tags.map((item, index) => (
-                        <span key={id + index} className={styles.tag}>
-                            #{item}
-                            {index === props.tags.length - 1 ? '' : ', '}
-                        </span>
+                        <HashTag
+                            key={id + index}
+                            name={item}
+                            lastItem={index === props.tags.length - 1}
+                        />
                     ))}
                 </div>
-                <div className={styles.ratingBlock}>
-                    {props.reactions}
-                    <img src={starIcon} alt={`Reactions ${props.reactions}`} />
-                </div>
+                <ReactionCount count={props.reactions} />
             </div>
             <div className={styles.body}>
                 <TextTruncate
@@ -38,6 +38,6 @@ export const PostCategoryCard: FC<Props> = (props) => {
                     text={props.body}
                 />
             </div>
-        </div>
+        </Link>
     )
 }

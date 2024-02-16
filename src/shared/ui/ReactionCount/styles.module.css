@@ -1,0 +1,8 @@
+.ratingBlock {
+    display: flex;
+    align-items: center;
+    color: var(--grey);
+    font-family: Manrope, sans-serif;
+    font-size: 19.34px;
+    line-height: 25.79px;
+}

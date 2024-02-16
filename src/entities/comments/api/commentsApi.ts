@@ -12,7 +12,14 @@ export const commentsApi = baseApi.injectEndpoints({
             transformResponse: (response: Comments) =>
                 response.comments.map(mapComments),
         }),
+        getCommentsByPostId: build.query<CommentsDto[], string | undefined>({
+            query: (id) => ({
+                url: `comments/post/${id}`,
+            }),
+            transformResponse: (response: Comments) =>
+                response.comments.map(mapComments),
+        }),
     }),
 })
 
-export const { useAllCommentsQuery } = commentsApi
+export const { useAllCommentsQuery, useGetCommentsByPostIdQuery } = commentsApi
