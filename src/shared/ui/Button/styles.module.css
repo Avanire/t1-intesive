@@ -10,6 +10,7 @@
     align-items: center;
     column-gap: 14.91px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .buttonThemePrimary {
@@ -20,6 +21,7 @@
 .buttonThemeSecondary {
     background: var(--white);
     color: var(--color-primary);
+    border: 1.5px solid rgb(108, 95, 188);
 }
 
 .buttonThemeWithIcon {

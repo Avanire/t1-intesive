@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import styles from './styles.module.css'
+import { Link } from 'react-router-dom'
 
 type Props = {
     size: 'small' | 'big'
@@ -10,7 +11,7 @@ export const Logo: FC<Props> = ({ size = 'small' }) => {
     const descriptionSize = size === 'small' ? '21px' : '28px'
 
     return (
-        <a href="/" className={styles.logo}>
+        <Link to="/" className={styles.logo}>
             <img
                 src="/images/logo.svg"
                 alt="logo eatly"
@@ -23,6 +24,6 @@ export const Logo: FC<Props> = ({ size = 'small' }) => {
             >
                 eatly
             </span>
-        </a>
+        </Link>
     )
 }
