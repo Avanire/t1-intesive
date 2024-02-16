@@ -6,15 +6,26 @@ import {
     commentsSelector,
     useAllCommentsQuery,
 } from '../../../../entities/comments'
-import divider from '../../../../assets/images/divider.png'
 import { useAppSelector } from '../../../../shared/model'
+import Slider from 'react-slick'
+import './style.css'
+import Skeleton from 'react-loading-skeleton'
 
 export const Reviews: FC = () => {
-    useAllCommentsQuery()
+    const { isLoading } = useAllCommentsQuery()
 
     const { comments = [] } = useAppSelector(commentsSelector)
 
     const firstSixComments = useMemo(() => comments.slice(0, 6), [comments])
+
+    const settingsSlider = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+    }
 
     return (
         <div>
@@ -23,26 +34,21 @@ export const Reviews: FC = () => {
                     Customer Say
                 </Head>
             </div>
-            <div className={styles.reviewSlider}>
-                <div className={styles.reviewSlides}>
-                    {firstSixComments.map((comment, index) => (
-                        <CommentsCard
-                            key={comment.id}
-                            extended={index === 0}
-                            name={comment.username}
-                            feedback={comment.feedback}
-                        />
-                    ))}
-                </div>
-                <div className={styles.divider}>
-                    <img
-                        src={divider}
-                        alt=""
-                        width={667}
-                        className={styles.dividerImg}
-                    />
-                </div>
-            </div>
+            {isLoading ? (
+                <Skeleton width={'100%'} height={150} />
+            ) : (
+                <>
+                    <Slider {...settingsSlider}>
+                        {firstSixComments.map((comment) => (
+                            <CommentsCard
+                                key={comment.id}
+                                name={comment.username}
+                                feedback={comment.feedback}
+                            />
+                        ))}
+                    </Slider>
+                </>
+            )}
         </div>
     )
 }

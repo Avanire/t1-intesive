@@ -1,15 +1,14 @@
-.reviewCard {
+.commentCard {
     background: #FFFFFF;
     border-radius: 20.89px;
     position: relative;
     flex: 0 0 528px;
     padding: 38px 43px;
     height: fit-content;
-    box-shadow: 0 23px 60px -29px #000;
 }
 
 .customer {
-    display: flex;
+    display: none;
     align-items: center;
     margin-bottom: 31.96px;
     column-gap: 20.89px;
@@ -51,12 +50,12 @@
 }
 
 @media (max-width: 580px) {
-    .reviewCard {
+    .commentCard {
         padding: 20px 12px;
         flex-shrink: 1;
     }
 
-    .reviewCard:not(:first-child) {
+    .commentCard:not(:first-child) {
         display: none;
     }
 
