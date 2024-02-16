@@ -1,11 +1,32 @@
-import { FC } from 'react'
+import { FC, useMemo } from 'react'
 import { Head } from '../../../../shared/ui'
 import styles from './styles.module.css'
-import { ReviewsCard } from '../../../../entities/reviews'
-import { reviewsList } from '../../constants'
-import divider from '../../../../assets/images/divider.png'
+import {
+    CommentsCard,
+    commentsSelector,
+    useAllCommentsQuery,
+} from '../../../../entities/comments'
+import { useAppSelector } from '../../../../shared/model'
+import Slider from 'react-slick'
+import './style.css'
+import Skeleton from 'react-loading-skeleton'
 
 export const Reviews: FC = () => {
+    const { isLoading } = useAllCommentsQuery()
+
+    const { comments = [] } = useAppSelector(commentsSelector)
+
+    const firstSixComments = useMemo(() => comments.slice(0, 6), [comments])
+
+    const settingsSlider = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+    }
+
     return (
         <div>
             <div className={styles.heading}>
@@ -13,29 +34,21 @@ export const Reviews: FC = () => {
                     Customer Say
                 </Head>
             </div>
-            <div className={styles.reviewSlider}>
-                <div className={styles.reviewSlides}>
-                    {reviewsList.map((review, index) => (
-                        <ReviewsCard
-                            key={review.id}
-                            extended={index === 0}
-                            photo={review.photo}
-                            name={review.name}
-                            time={review.createdAt}
-                            feedback={review.feedback}
-                            rating={review.rating}
-                        />
-                    ))}
-                </div>
-                <div className={styles.divider}>
-                    <img
-                        src={divider}
-                        alt=""
-                        width={667}
-                        className={styles.dividerImg}
-                    />
-                </div>
-            </div>
+            {isLoading ? (
+                <Skeleton width={'100%'} height={150} />
+            ) : (
+                <>
+                    <Slider {...settingsSlider}>
+                        {firstSixComments.map((comment) => (
+                            <CommentsCard
+                                key={comment.id}
+                                name={comment.username}
+                                feedback={comment.feedback}
+                            />
+                        ))}
+                    </Slider>
+                </>
+            )}
         </div>
     )
 }

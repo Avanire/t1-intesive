@@ -1,4 +1,4 @@
-.reviewCard {
+.commentCard {
     background: #FFFFFF;
     border-radius: 20.89px;
     position: relative;
@@ -7,20 +7,8 @@
     height: fit-content;
 }
 
-.shadow {
-    position: absolute;
-    width: 574px;
-    height: 350px;
-    top: 31px;
-    border-radius: 20.12px;
-    filter: blur(184.39px);
-    background: rgb(50, 49, 66);
-    opacity: 0.2;
-    z-index: -1;
-}
-
 .customer {
-    display: flex;
+    display: none;
     align-items: center;
     margin-bottom: 31.96px;
     column-gap: 20.89px;
@@ -62,12 +50,12 @@
 }
 
 @media (max-width: 580px) {
-    .reviewCard {
+    .commentCard {
         padding: 20px 12px;
         flex-shrink: 1;
     }
 
-    .reviewCard:not(:first-child) {
+    .commentCard:not(:first-child) {
         display: none;
     }
 

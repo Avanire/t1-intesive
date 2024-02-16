@@ -9,7 +9,15 @@ type Props = {
 }
 
 export const MenuLink: FC<Props> = (props) => {
-    return (
+    return props.url.includes('#') ? (
+        <a
+            href={props.url}
+            style={{ color: props.color }}
+            className={styles.menuLink}
+        >
+            {props.name}
+        </a>
+    ) : (
         <Link
             to={props.url}
             style={{ color: props.color }}

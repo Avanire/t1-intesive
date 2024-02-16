@@ -1,0 +1,11 @@
+.slick-current .review-card__head {
+    display: flex;
+}
+
+.slick-list {
+    width: 100vw;
+}
+
+.slick-slide div div {
+    margin-right: 46px;
+}

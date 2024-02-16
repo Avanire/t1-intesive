@@ -1,15 +1,18 @@
-import { topRecipesList } from '../constants'
+import { baseApi } from '../../../shared/api'
+import { Recipes } from '../model/types'
+import { mapRecipes } from '../lib/mapRecipes'
+import { RecipesDto } from './types'
 
-type RecipesApi = {
-    data: typeof topRecipesList
-    isLoading: boolean
-}
+export const recipesApi = baseApi.injectEndpoints({
+    endpoints: (build) => ({
+        recipesByMealType: build.query<RecipesDto[], string>({
+            query: (name) => ({
+                url: `recipes/meal-type/${name}`,
+            }),
+            transformResponse: (response: Recipes) =>
+                response.recipes.map(mapRecipes),
+        }),
+    }),
+})
 
-const recipesApi = (): RecipesApi => {
-    return {
-        data: topRecipesList,
-        isLoading: false,
-    }
-}
-
-export const useTopRecipesQuery = recipesApi
+export const { useRecipesByMealTypeQuery } = recipesApi
