@@ -33,3 +33,11 @@ export const H3: Story = {
         children: 'Заголовок H3',
     },
 }
+
+export const H4: Story = {
+    args: {
+        highlightNumber: 0,
+        head: 'h4',
+        children: 'Заголовок H4',
+    },
+}

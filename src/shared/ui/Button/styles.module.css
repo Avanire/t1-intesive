@@ -11,6 +11,7 @@
     column-gap: 14.91px;
     cursor: pointer;
     text-decoration: none;
+    width: fit-content;
 }
 
 .buttonThemePrimary {

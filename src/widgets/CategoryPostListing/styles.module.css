@@ -6,12 +6,17 @@
     margin-bottom: 64px;
 }
 
-.categoryListingSkeleton {
+.categoryListingSkeletonContainer {
     display: flex;
     flex-wrap: wrap;
     column-gap: 30px;
     row-gap: 50px;
     margin-bottom: 64px;
+}
+
+.skeletonItem {
+    width: 349px;
+    height: 252px;
 }
 
 .arrows {
@@ -34,4 +39,15 @@
 
 .button:disabled svg path {
     fill: #CECECE;
+}
+
+@media (max-width: 580px) {
+    .categoryListingSkeletonContainer {
+        row-gap: 25px;
+    }
+
+    .skeletonItem {
+        width: 251px;
+        height: 227px;
+    }
 }
