@@ -11,7 +11,8 @@
 @media (max-width: 580px) {
     .header {
         margin: 24px 15px 26px 15px;
-        column-gap: normal;
-        justify-content: space-between;
+        gap: 24px;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 }

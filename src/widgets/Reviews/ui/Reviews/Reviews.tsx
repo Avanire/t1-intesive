@@ -25,6 +25,20 @@ export const Reviews: FC = () => {
         slidesToShow: 3,
         slidesToScroll: 1,
         arrows: false,
+        responsive: [
+            {
+                breakpoint: 1100,
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: 690,
+                settings: {
+                    slidesToShow: 1,
+                },
+            },
+        ],
     }
 
     return (
@@ -37,17 +51,15 @@ export const Reviews: FC = () => {
             {isLoading ? (
                 <Skeleton width={'100%'} height={150} />
             ) : (
-                <>
-                    <Slider {...settingsSlider}>
-                        {firstSixComments.map((comment) => (
-                            <CommentsCard
-                                key={comment.id}
-                                name={comment.username}
-                                feedback={comment.feedback}
-                            />
-                        ))}
-                    </Slider>
-                </>
+                <Slider {...settingsSlider}>
+                    {firstSixComments.map((comment) => (
+                        <CommentsCard
+                            key={comment.id}
+                            name={comment.username}
+                            feedback={comment.feedback}
+                        />
+                    ))}
+                </Slider>
             )}
         </div>
     )

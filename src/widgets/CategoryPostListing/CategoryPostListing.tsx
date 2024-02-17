@@ -26,10 +26,11 @@ const CategoryPostListing: FC = () => {
             <div className={styles.categoryListing}>
                 {isFetching ? (
                     <Skeleton
-                        width={349}
-                        height={252}
                         count={12}
-                        containerClassName={styles.categoryListingSkeleton}
+                        containerClassName={
+                            styles.categoryListingSkeletonContainer
+                        }
+                        className={styles.skeletonItem}
                     />
                 ) : (
                     data &&
