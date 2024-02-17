@@ -78,6 +78,7 @@
     "prettier": "3.2.5",
     "prop-types": "15.8.1",
     "storybook": "^7.6.14",
+    "storybook-addon-react-router-v6": "^2.0.10",
     "webpack": "5.90.1"
   }
 }
