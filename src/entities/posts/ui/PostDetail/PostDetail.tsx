@@ -1,5 +1,5 @@
 import { FC, useId } from 'react'
-import { HashTag, Head, ReactionCount } from '../../../../shared/ui'
+import { HashTag, Head, ReactionCount } from '@shared/ui'
 import styles from './styles.module.css'
 
 type Props = {

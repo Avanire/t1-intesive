@@ -1,6 +1,6 @@
 import { FC } from 'react'
-import starIcon from '../../../../assets/images/Star.svg'
-import bookmarkIcon from '../../../../assets/images/Book-Mark.svg'
+import starIcon from 'assets/images/Star.svg'
+import bookmarkIcon from 'assets/images/Book-Mark.svg'
 import styles from './styles.module.css'
 
 type Props = {

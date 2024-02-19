@@ -1,4 +1,4 @@
-import { baseApi } from '../../../shared/api'
+import { baseApi } from '@shared/api'
 import { CommentsDto } from './types'
 import { Comments } from '../model/types'
 import { mapComments } from '../lib/mapComments'

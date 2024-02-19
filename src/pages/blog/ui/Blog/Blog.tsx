@@ -1,7 +1,7 @@
 import { FC } from 'react'
-import { Head } from '../../../../shared/ui'
+import { Head } from '@shared/ui'
 import styles from './styles.module.css'
-import CategoryPostListing from '../../../../widgets/CategoryPostListing/CategoryPostListing'
+import CategoryPostListing from '@widgets/CategoryPostListing/CategoryPostListing'
 
 const Blog: FC = () => {
     return (

@@ -1,7 +1,6 @@
 import { FC } from 'react'
-import { Description } from '../Description/Description'
+import { BannerImage, Description } from '@widgets/Banner'
 import styles from './styles.module.css'
-import { BannerImage } from '../BannerImage/BannerImage'
 
 export const Banner: FC = () => {
     return (

@@ -2,7 +2,7 @@ import { FC, useId } from 'react'
 import styles from './styles.module.css'
 import TextTruncate from 'react-text-truncate'
 import { Link } from 'react-router-dom'
-import { HashTag, ReactionCount } from '../../../../shared/ui'
+import { HashTag, ReactionCount } from '@shared/ui'
 
 type Props = {
     id: number

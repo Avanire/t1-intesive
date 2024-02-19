@@ -1,6 +1,6 @@
 import { FC } from 'react'
-import { Logo } from '../../../../shared/ui'
-import { FooterMenu } from '../FooterMenu/FooterMenu'
+import { Logo } from '@shared/ui'
+import { FooterMenu } from '@widgets/LayoutFooter'
 import { footerMenuList } from '../../constants'
 import styles from './styles.module.css'
 

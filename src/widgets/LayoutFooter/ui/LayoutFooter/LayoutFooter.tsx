@@ -1,7 +1,6 @@
 import { FC } from 'react'
 import styles from './styles.module.css'
-import { FooterTop } from '../FooterTop/FooterTop'
-import { FooterBottom } from '../FooterBottom/FooterBottom'
+import { FooterBottom, FooterTop } from '@widgets/LayoutFooter'
 
 export const LayoutFooter: FC = () => {
     return (

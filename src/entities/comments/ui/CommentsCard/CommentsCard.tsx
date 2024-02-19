@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import quotesIcon from '../../../../assets/images/quotes-icon.png'
+import quotesIcon from '@assets/images/quotes-icon.png'
 import styles from './styles.module.css'
 import cn from 'classnames'
 

@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import styles from './styles.module.css'
-import { Copyright } from '../Copyright/Copyright'
+import { Copyright } from '@widgets/LayoutFooter'
 import { Social } from '../Social/Social'
 
 export const FooterBottom: FC = () => {

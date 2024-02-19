@@ -1,8 +1,8 @@
 import { FC } from 'react'
-import { DashboardCard, Head } from '../../../../shared/ui'
+import { DashboardCard, Head } from '@shared/ui'
 import styles from './styles.module.css'
 import { dashboardCardList } from '../../constants'
-import savingsImg from '../../../../assets/images/savings.png'
+import savingsImg from '@assets/images/savings.png'
 
 export const PresentationDashboard: FC = () => {
     return (
