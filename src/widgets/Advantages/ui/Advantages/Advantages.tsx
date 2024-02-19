@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import styles from './styles.module.css'
 import { advantageList } from '../../constants'
-import { Advantage } from '../../../../shared/ui'
+import { Advantage } from '@shared/ui'
 
 export const Advantages: FC = () => {
     return (

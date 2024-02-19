@@ -1,10 +1,7 @@
 import { FC, useMemo } from 'react'
-import { Head } from '../../../../shared/ui'
+import { Head } from '@shared/ui'
 import styles from './styles.module.css'
-import {
-    RecipesCard,
-    useRecipesByMealTypeQuery,
-} from '../../../../entities/recipes'
+import { RecipesCard, useRecipesByMealTypeQuery } from '@entities/recipes'
 import Skeleton from 'react-loading-skeleton'
 import _ from 'lodash'
 

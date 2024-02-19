@@ -1,15 +1,12 @@
 import { FC } from 'react'
 import { useParams } from 'react-router'
-import { PostDetail, usePostQuery } from '../../../../entities/posts'
-import { useGetUserQuery } from '../../../../entities/user'
+import { PostDetail, usePostQuery } from '@entities/posts'
+import { useGetUserQuery } from '@entities/user'
 import styles from './styles.module.css'
 import Skeleton from 'react-loading-skeleton'
-import { Button, Head } from '../../../../shared/ui'
-import arrowLeftIcon from '../../../../assets/images/arrow-left.svg'
-import {
-    CommentsCard,
-    useGetCommentsByPostIdQuery,
-} from '../../../../entities/comments'
+import { Button, Head } from '@shared/ui'
+import arrowLeftIcon from '@assets/images/arrow-left.svg'
+import { CommentsCard, useGetCommentsByPostIdQuery } from '@entities/comments'
 
 const Post: FC = () => {
     const { id } = useParams()

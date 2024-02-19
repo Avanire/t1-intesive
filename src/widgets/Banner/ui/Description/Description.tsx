@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { Button, Head, Subtitle } from '../../../../shared/ui'
+import { Button, Head, Subtitle } from '@shared/ui'
 import styles from './styles.module.css'
 
 export const Description: FC = () => {

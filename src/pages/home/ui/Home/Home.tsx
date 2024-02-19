@@ -1,12 +1,12 @@
 import { FC } from 'react'
-import { Banner } from '../../../../widgets/Banner'
+import { Banner } from '@widgets/Banner'
 import styles from './styles.module.css'
-import { Advantages } from '../../../../widgets/Advantages'
-import { InfoBlock } from '../../../../widgets/InfoBlock'
-import { TopRecipes } from '../../../../widgets/TopRecipes'
-import { PresentationDashboard } from '../../../../widgets/PresentationDashboard'
-import { Reviews } from '../../../../widgets/Reviews/ui/Reviews/Reviews'
-import { FAQ } from '../../../../widgets/FAQ'
+import { Advantages } from '@widgets/Advantages'
+import { InfoBlock } from '@widgets/InfoBlock'
+import { TopRecipes } from '@widgets/TopRecipes'
+import { PresentationDashboard } from '@widgets/PresentationDashboard'
+import { Reviews } from '@widgets/Reviews/ui/Reviews/Reviews'
+import { FAQ } from '@widgets/FAQ'
 
 const Home: FC = () => {
     return (

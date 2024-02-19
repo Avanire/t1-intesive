@@ -1,4 +1,4 @@
-import { baseApi } from '../../../shared/api'
+import { baseApi } from '@shared/api'
 import { Recipes } from '../model/types'
 import { mapRecipes } from '../lib/mapRecipes'
 import { RecipesDto } from './types'

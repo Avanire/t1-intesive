@@ -1,7 +1,7 @@
 import { FC } from 'react'
-import { Button, Head, LinkedList } from '../../../../shared/ui'
-import image from '../../../../assets/images/Mobile-Screen.png'
-import arrowIcon from '../../../../assets/images/Arrow.svg'
+import { Button, Head, LinkedList } from '@shared/ui'
+import image from '@assets/images/Mobile-Screen.png'
+import arrowIcon from '@assets/images/Arrow.svg'
 import { linkedList } from '../../constants'
 import styles from './styles.module.css'
 

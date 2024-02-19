@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 import { commentsApi } from '../api/commentsApi'
 import { CommentsDto } from '../api/types'
-import { RootState } from '../../../app/store/store'
+import { RootState } from '@app/store/store'
 
 type CommentsSliceState = {
     comments: Array<CommentsDto>

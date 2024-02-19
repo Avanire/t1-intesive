@@ -1,4 +1,4 @@
-import { baseApi } from '../../../shared/api'
+import { baseApi } from '@shared/api'
 import { Query } from './types'
 import { Post, Posts } from '../model/type'
 

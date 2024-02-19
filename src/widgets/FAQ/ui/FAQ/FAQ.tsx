@@ -1,7 +1,7 @@
 import { FC } from 'react'
-import { Head } from '../../../../shared/ui'
+import { Head } from '@shared/ui'
 import styles from './styles.module.css'
-import { FaqCard } from '../../../../entities/faq'
+import { FaqCard } from '@entities/faq'
 import { faqList } from '../../constants'
 
 export const FAQ: FC = () => {

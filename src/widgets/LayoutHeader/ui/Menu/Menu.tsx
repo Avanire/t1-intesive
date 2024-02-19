@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { MenuLink } from '../../../../shared/ui'
+import { MenuLink } from '@shared/ui'
 import styles from './styles.module.css'
 
 type Props = {

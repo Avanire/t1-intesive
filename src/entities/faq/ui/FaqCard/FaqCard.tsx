@@ -1,7 +1,7 @@
 import { FC, useState } from 'react'
 import styles from './styles.module.css'
-import minusIcon from '../../../../assets/images/minus.svg'
-import plusIcon from '../../../../assets/images/plus.svg'
+import minusIcon from 'assets/images/minus.svg'
+import plusIcon from 'assets/images/plus.svg'
 import cn from 'classnames'
 
 type Props = {

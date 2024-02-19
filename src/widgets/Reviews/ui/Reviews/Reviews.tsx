@@ -1,12 +1,12 @@
 import { FC, useMemo } from 'react'
-import { Head } from '../../../../shared/ui'
+import { Head } from '@shared/ui'
 import styles from './styles.module.css'
 import {
     CommentsCard,
     commentsSelector,
     useAllCommentsQuery,
-} from '../../../../entities/comments'
-import { useAppSelector } from '../../../../shared/model'
+} from '@entities/comments'
+import { useAppSelector } from '@shared/model'
 import Slider from 'react-slick'
 import './style.css'
 import Skeleton from 'react-loading-skeleton'

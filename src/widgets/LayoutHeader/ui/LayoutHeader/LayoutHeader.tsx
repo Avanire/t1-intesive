@@ -1,6 +1,6 @@
 import { FC } from 'react'
-import { Menu } from 'widgets/LayoutHeader'
-import { Logo } from '../../../../shared/ui'
+import { Menu } from '@widgets/LayoutHeader'
+import { Logo } from '@shared/ui'
 import styles from './styles.module.css'
 import { menu } from '../../constants'
 

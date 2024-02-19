@@ -1,8 +1,8 @@
 import { FC } from 'react'
 import styles from './styles.module.css'
-import card from '../../../../assets/images/Food-Image.png'
-import graph from '../../../../assets/images/Graph.png'
-import { DashboardCard } from '../../../../entities/dashboard'
+import card from '@assets/images/Food-Image.png'
+import graph from '@assets/images/Graph.png'
+import { DashboardCard } from '@entities/dashboard'
 
 export const BannerImage: FC = () => {
     return (
