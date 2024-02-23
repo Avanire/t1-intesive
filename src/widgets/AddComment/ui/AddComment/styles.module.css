@@ -1,0 +1,17 @@
+.addCommentHead {
+    margin-bottom: 51px;
+}
+
+.commentTextarea {
+    margin-bottom: 51px;
+}
+
+.addCommentBtn {
+    width: 493px;
+    justify-content: center;
+}
+
+.error {
+    margin-bottom: 16px;
+    color: red;
+}

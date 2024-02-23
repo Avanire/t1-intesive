@@ -4,9 +4,10 @@ import { PostDetail, usePostQuery } from '@entities/posts'
 import { useGetUserQuery } from '@entities/user'
 import styles from './styles.module.css'
 import Skeleton from 'react-loading-skeleton'
-import { Button, Head } from '@shared/ui'
+import { Button } from '@shared/ui'
 import arrowLeftIcon from '@assets/images/arrow-left.svg'
-import { CommentsCard, useGetCommentsByPostIdQuery } from '@entities/comments'
+import { AddComment } from '@widgets/AddComment/ui/AddComment/AddComment'
+import { CommentsList } from '@widgets/CommentsList'
 
 const Post: FC = () => {
     const { id } = useParams()
@@ -15,8 +16,6 @@ const Post: FC = () => {
     const { data: user, isSuccess: userIsSuccess } = useGetUserQuery(
         post?.userId
     )
-    const { data: comments, isSuccess: commentsIsSuccess } =
-        useGetCommentsByPostIdQuery(id)
 
     return (
         <section className={styles.post}>
@@ -43,29 +42,14 @@ const Post: FC = () => {
                 </Button>
             </div>
             <div className={styles.commentsBlock}>
-                <div className={styles.commentsHead}>
-                    <Head head="h4">Comments</Head>
-                </div>
-                <div className={styles.comments}>
-                    {commentsIsSuccess ? (
-                        comments.map((comment) => (
-                            <div key={comment.id} className={styles.comment}>
-                                <CommentsCard
-                                    name={comment.username}
-                                    feedback={comment.feedback}
-                                    extended="Extended"
-                                />
-                            </div>
-                        ))
-                    ) : (
-                        <Skeleton
-                            width={'100%'}
-                            height={218}
-                            count={3}
-                            containerClassName={styles.commentsSkeleton}
-                        />
-                    )}
-                </div>
+                {id && <CommentsList postId={id} />}
+            </div>
+            <div className={styles.addCommentBlock}>
+                {id && post ? (
+                    <AddComment postId={id} userId={post.userId} />
+                ) : (
+                    <Skeleton width="100%" height={345} />
+                )}
             </div>
         </section>
     )

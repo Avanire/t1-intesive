@@ -3,4 +3,8 @@ export {
     useAllCommentsQuery,
     useGetCommentsByPostIdQuery,
 } from './api/commentsApi'
-export { commentsSlice, commentsSelector } from './model/slice'
+export {
+    commentsSlice,
+    commentsSelector,
+    resetCommentsByPost,
+} from './model/slice'

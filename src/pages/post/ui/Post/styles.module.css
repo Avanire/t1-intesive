@@ -16,24 +16,8 @@
     margin-bottom: 113px;
 }
 
-.commentsHead {
-    margin-bottom: 77px;
-}
-
-.comments {
-    display: flex;
-    flex-direction: column;
-    row-gap: 118px;
-}
-
-.comment {
-    box-shadow: 7px 0 46px -24px #000;
-}
-
-.commentsSkeleton {
-    display: flex;
-    flex-direction: column;
-    row-gap: 50px;
+.addCommentBlock {
+    margin-bottom: 78px;
 }
 
 @media (max-width: 1100px) {
