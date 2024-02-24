@@ -1,6 +1,9 @@
 import { baseApi } from '@shared/api'
 import { Query } from './types'
 import { Post, Posts } from '../model/type'
+import { User } from '@entities/user/model/types'
+import { transformUser } from '@entities/user/lib/transformUser'
+import { FetchBaseQueryError } from '@reduxjs/toolkit/query'
 
 export const postsApi = baseApi.injectEndpoints({
     endpoints: (build) => ({
@@ -14,7 +17,25 @@ export const postsApi = baseApi.injectEndpoints({
                 url: `posts/${id}`,
             }),
         }),
+        postWithUser: build.query({
+            queryFn: async (postId, _queryApi, _extraOptions, fetchWithBQ) => {
+                const postRes = await fetchWithBQ(`post/${postId}`)
+                if (postRes.error) {
+                    return { error: postRes.error as FetchBaseQueryError }
+                }
+                const post = postRes.data as Post
+
+                const userRes = await fetchWithBQ(`user/${post.userId}`)
+                if (userRes.error) {
+                    return { error: userRes.error as FetchBaseQueryError }
+                }
+                const user = userRes.data as User
+                const adaptedUser = transformUser(user)
+
+                return { data: { user: adaptedUser, post: post } }
+            },
+        }),
     }),
 })
 
-export const { useAllPostQuery, usePostQuery } = postsApi
+export const { useAllPostQuery, usePostQuery, usePostWithUserQuery } = postsApi
