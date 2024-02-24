@@ -1,0 +1,25 @@
+.customer {
+    display: flex;
+    column-gap: 14.61px;
+    align-items: center;
+    color: rgb(141, 141, 141);
+    font-family: Poppins, sans-serif;
+    font-size: 15.04px;
+    line-height: 23px;
+}
+
+.imageBlock {
+    width: 55px;
+}
+
+.image {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.fullName {
+    color: rgb(0, 0, 0);
+    font-size: 17.02px;
+    font-weight: 500;
+    line-height: 26.1px;
+}

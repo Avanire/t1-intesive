@@ -4,4 +4,5 @@ export {
     useAllPostQuery,
     usePostQuery,
     usePostWithUserQuery,
+    useAllPostWithUserQuery,
 } from './api/postsApi'
