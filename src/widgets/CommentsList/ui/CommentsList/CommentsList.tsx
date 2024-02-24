@@ -17,15 +17,13 @@ type Props = {
 export const CommentsList: FC<Props> = ({ postId }) => {
     const dispatch = useAppDispatch()
 
-    const { isSuccess, refetch } = useGetCommentsByPostIdQuery(postId)
+    const { isSuccess } = useGetCommentsByPostIdQuery(postId, {
+        refetchOnMountOrArgChange: true,
+    })
 
     const { commentsByPost = [] } = useAppSelector(commentsSelector)
 
     useEffect(() => {
-        if (commentsByPost.length === 0) {
-            refetch()
-        }
-
         return () => {
             dispatch({
                 type: resetCommentsByPost.type,
