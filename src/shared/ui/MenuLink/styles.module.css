@@ -5,3 +5,7 @@
     line-height: 26.74px;
     text-decoration: none;
 }
+
+.menuLink:hover {
+    text-shadow: 0 0 1px rgb(96, 96, 96);
+}

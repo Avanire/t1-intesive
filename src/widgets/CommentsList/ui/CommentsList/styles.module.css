@@ -1,0 +1,29 @@
+.commentsHead {
+    margin-bottom: 77px;
+}
+
+.comments {
+    display: flex;
+    flex-direction: column;
+    row-gap: 118px;
+}
+
+.comment {
+    box-shadow: 7px 0 46px -24px #000;
+}
+
+.commentsSkeleton {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+@media (max-width: 580px) {
+    .commentsHead {
+        margin-bottom: 34px;
+    }
+
+    .comments {
+        row-gap: 60px;
+    }
+}

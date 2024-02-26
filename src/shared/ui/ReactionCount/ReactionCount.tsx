@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import styles from './styles.module.css'
-import starIcon from '@assets/images/Star.svg'
+import starIcon from 'assets/images/Star.svg'
 
 type Props = {
     count: number

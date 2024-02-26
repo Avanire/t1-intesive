@@ -1,0 +1,11 @@
+.textarea {
+    width: 100%;
+    border: 2px solid var(--color-primary);
+    border-radius: 18.12px;
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    font-size: 18.12px;
+    color: #B6B6B6;
+    text-transform: uppercase;
+    padding: 22.65px 27.18px;
+}

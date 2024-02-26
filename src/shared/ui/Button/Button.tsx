@@ -13,6 +13,7 @@ type Props = {
     url?: string
     icon?: string
     iconDirect?: 'ltr' | 'rtr'
+    extraClass?: string
 }
 
 export const Button: FC<Props> = ({
@@ -23,11 +24,16 @@ export const Button: FC<Props> = ({
     icon,
     iconDirect = 'rtr',
     url,
+    extraClass,
 }) => {
     return type === 'link' ? (
         <Link
             to={url ? url : '#'}
-            className={cn(styles.button, styles[`buttonTheme${theme}`])}
+            className={cn(
+                styles.button,
+                styles[`buttonTheme${theme}`],
+                extraClass
+            )}
         >
             {icon && iconDirect === 'ltr' && <img src={icon} alt="" />}
             {children}
@@ -37,7 +43,11 @@ export const Button: FC<Props> = ({
         <button
             type={type}
             onClick={onClick}
-            className={cn(styles.button, styles[`buttonTheme${theme}`])}
+            className={cn(
+                styles.button,
+                styles[`buttonTheme${theme}`],
+                extraClass
+            )}
         >
             {icon && iconDirect === 'ltr' && <img src={icon} alt="" />}
             {children}

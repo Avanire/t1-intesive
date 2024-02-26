@@ -1,16 +1,16 @@
 import { FC, useState } from 'react'
 import styles from './styles.module.css'
-import { PostCategoryCard, useAllPostQuery } from '@entities/posts'
+import { PostCategoryCard, useAllPostWithUserQuery } from 'entities/posts'
 import Skeleton from 'react-loading-skeleton'
 
 const CategoryPostListing: FC = () => {
     const [page, setPage] = useState(0)
     const [itemPerPage] = useState(12)
 
-    const { data, isFetching } = useAllPostQuery({
+    const { data, isFetching } = useAllPostWithUserQuery({
         limit: itemPerPage,
         skip: itemPerPage * page,
-        selectFields: ['reactions', 'body', 'tags', 'title'],
+        selectFields: ['reactions', 'body', 'tags', 'title', 'userId'],
     })
 
     const handlePrevPage = () => {

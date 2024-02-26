@@ -1,31 +1,26 @@
 import { FC } from 'react'
 import { useParams } from 'react-router'
-import { PostDetail, usePostQuery } from '@entities/posts'
-import { useGetUserQuery } from '@entities/user'
+import { PostDetail, usePostWithUserQuery } from 'entities/posts'
 import styles from './styles.module.css'
 import Skeleton from 'react-loading-skeleton'
-import { Button, Head } from '@shared/ui'
-import arrowLeftIcon from '@assets/images/arrow-left.svg'
-import { CommentsCard, useGetCommentsByPostIdQuery } from '@entities/comments'
+import { Button } from 'shared/ui'
+import arrowLeftIcon from 'assets/images/arrow-left.svg'
+import { AddComment } from 'widgets/AddComment/ui/AddComment/AddComment'
+import { CommentsList } from 'widgets/CommentsList'
 
 const Post: FC = () => {
     const { id } = useParams()
 
-    const { data: post, isSuccess: postIsSuccess } = usePostQuery(id)
-    const { data: user, isSuccess: userIsSuccess } = useGetUserQuery(
-        post?.userId
-    )
-    const { data: comments, isSuccess: commentsIsSuccess } =
-        useGetCommentsByPostIdQuery(id)
+    const { data, isSuccess } = usePostWithUserQuery(id)
 
     return (
         <section className={styles.post}>
             <div className={styles.detail}>
-                {postIsSuccess && userIsSuccess ? (
+                {isSuccess ? (
                     <PostDetail
-                        {...post}
-                        fullName={user.fullName}
-                        photo={user.photo}
+                        {...data.post}
+                        fullName={data.user.fullName}
+                        photo={data.user.photo}
                     />
                 ) : (
                     <Skeleton width={'100%'} height={350} />
@@ -43,29 +38,14 @@ const Post: FC = () => {
                 </Button>
             </div>
             <div className={styles.commentsBlock}>
-                <div className={styles.commentsHead}>
-                    <Head head="h4">Comments</Head>
-                </div>
-                <div className={styles.comments}>
-                    {commentsIsSuccess ? (
-                        comments.map((comment) => (
-                            <div key={comment.id} className={styles.comment}>
-                                <CommentsCard
-                                    name={comment.username}
-                                    feedback={comment.feedback}
-                                    extended="Extended"
-                                />
-                            </div>
-                        ))
-                    ) : (
-                        <Skeleton
-                            width={'100%'}
-                            height={218}
-                            count={3}
-                            containerClassName={styles.commentsSkeleton}
-                        />
-                    )}
-                </div>
+                {id && <CommentsList postId={id} />}
+            </div>
+            <div className={styles.addCommentBlock}>
+                {id && data?.post ? (
+                    <AddComment postId={id} userId={data.post.userId} />
+                ) : (
+                    <Skeleton width="100%" height={345} />
+                )}
             </div>
         </section>
     )

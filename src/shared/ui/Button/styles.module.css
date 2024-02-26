@@ -19,10 +19,19 @@
     color: var(--white);
 }
 
+.buttonThemePrimary:hover {
+    background: #8783d1;
+}
+
 .buttonThemeSecondary {
     background: var(--white);
     color: var(--color-primary);
     border: 1.5px solid rgb(108, 95, 188);
+}
+
+.buttonThemeSecondary:hover {
+    color: #8783d1;
+    border-color: #8783d1;
 }
 
 .buttonThemeWithIcon {
