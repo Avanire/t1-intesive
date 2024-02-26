@@ -1,10 +1,10 @@
 import { FC, useId } from 'react'
-import { HashTag, Head, ReactionCount } from '@shared/ui'
+import { HashTag, Head, ReactionCount } from 'shared/ui'
+import { WrittenInfo } from 'entities/user'
 import styles from './styles.module.css'
-import { WrittenInfo } from '@entities/user'
 
 type Props = {
-    id: number
+    id?: number
     title: string
     body: string
     tags: Array<string>
@@ -36,7 +36,12 @@ export const PostDetail: FC<Props> = (props) => {
                     </div>
                 </div>
             </div>
-            <div className={styles.bodyText}>{props.body}</div>
+            <div
+                className={styles.bodyText}
+                data-testid="test-post-detail-body"
+            >
+                {props.body}
+            </div>
         </>
     )
 }

@@ -1,4 +1,4 @@
-import { baseApi } from '@shared/api'
+import { baseApi } from 'shared/api'
 import { User } from '../model/types'
 import { UserDto } from './types'
 import { transformUser } from '../lib/transformUser'

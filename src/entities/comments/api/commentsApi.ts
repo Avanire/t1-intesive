@@ -1,8 +1,8 @@
-import { baseApi } from '@shared/api'
+import { baseApi } from 'shared/api'
 import { CommentsDto } from './types'
 import { Comment, Comments } from '../model/types'
 import { mapComments } from '../lib/mapComments'
-import { transformComment } from '@entities/comments/lib/transformComment'
+import { transformComment } from 'entities/comments/lib/transformComment'
 
 export const commentsApi = baseApi.injectEndpoints({
     endpoints: (build) => ({
@@ -19,7 +19,6 @@ export const commentsApi = baseApi.injectEndpoints({
             }),
             transformResponse: (response: Comments) =>
                 response.comments.map(mapComments),
-            providesTags: ['Comments'],
         }),
         addComment: build.mutation<CommentsDto, string>({
             query: (body) => ({

@@ -8,7 +8,7 @@ type Props = {
 
 export const HashTag: FC<Props> = (props) => {
     return (
-        <span className={styles.tag}>
+        <span className={styles.tag} data-testid="test-hashtag">
             #{props.name}
             {props.lastItem ? '' : ', '}
         </span>

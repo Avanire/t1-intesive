@@ -1,6 +1,6 @@
 import { FC, useState } from 'react'
 import styles from './styles.module.css'
-import { PostCategoryCard, useAllPostWithUserQuery } from '@entities/posts'
+import { PostCategoryCard, useAllPostWithUserQuery } from 'entities/posts'
 import Skeleton from 'react-loading-skeleton'
 
 const CategoryPostListing: FC = () => {

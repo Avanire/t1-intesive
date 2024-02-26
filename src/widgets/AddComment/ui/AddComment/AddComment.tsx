@@ -1,8 +1,8 @@
 import { FC, SyntheticEvent, useState } from 'react'
 import styles from './styles.module.css'
-import { Button, Head, TextArea } from '@shared/ui'
-import { useAddCommentMutation } from '@entities/comments/api/commentsApi'
-import { validateComment } from '@widgets/AddComment/validate'
+import { Button, Head, TextArea } from 'shared/ui'
+import { useAddCommentMutation } from 'entities/comments/api/commentsApi'
+import { validateComment } from 'widgets/AddComment/validate'
 
 type Props = {
     postId: string | number

@@ -1,12 +1,12 @@
 import { FC } from 'react'
 import { useParams } from 'react-router'
-import { PostDetail, usePostWithUserQuery } from '@entities/posts'
+import { PostDetail, usePostWithUserQuery } from 'entities/posts'
 import styles from './styles.module.css'
 import Skeleton from 'react-loading-skeleton'
-import { Button } from '@shared/ui'
-import arrowLeftIcon from '@assets/images/arrow-left.svg'
-import { AddComment } from '@widgets/AddComment/ui/AddComment/AddComment'
-import { CommentsList } from '@widgets/CommentsList'
+import { Button } from 'shared/ui'
+import arrowLeftIcon from 'assets/images/arrow-left.svg'
+import { AddComment } from 'widgets/AddComment/ui/AddComment/AddComment'
+import { CommentsList } from 'widgets/CommentsList'
 
 const Post: FC = () => {
     const { id } = useParams()

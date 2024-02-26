@@ -1,35 +1,24 @@
-import { FC, useEffect } from 'react'
+import { FC } from 'react'
 import styles from './styles.module.css'
-import { Head } from '@shared/ui'
+import { Head } from 'shared/ui'
 import {
     CommentsCard,
     commentsSelector,
-    resetCommentsByPost,
     useGetCommentsByPostIdQuery,
-} from '@entities/comments'
+} from 'entities/comments'
 import Skeleton from 'react-loading-skeleton'
-import { useAppDispatch, useAppSelector } from '@shared/model'
+import { useAppSelector } from 'shared/model'
 
 type Props = {
     postId: string
 }
 
 export const CommentsList: FC<Props> = ({ postId }) => {
-    const dispatch = useAppDispatch()
-
     const { isSuccess } = useGetCommentsByPostIdQuery(postId, {
         refetchOnMountOrArgChange: true,
     })
 
     const { commentsByPost = [] } = useAppSelector(commentsSelector)
-
-    useEffect(() => {
-        return () => {
-            dispatch({
-                type: resetCommentsByPost.type,
-            })
-        }
-    }, [])
 
     return (
         <>

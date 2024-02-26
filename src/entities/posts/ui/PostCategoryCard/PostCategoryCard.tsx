@@ -2,8 +2,8 @@ import { FC, useId } from 'react'
 import styles from './styles.module.css'
 import TextTruncate from 'react-text-truncate'
 import { Link } from 'react-router-dom'
-import { HashTag, ReactionCount } from '@shared/ui'
-import { WrittenInfo } from '@entities/user'
+import { HashTag, ReactionCount } from 'shared/ui'
+import { WrittenInfo } from 'entities/user'
 
 type Props = {
     id: number

@@ -1,8 +1,8 @@
-import { baseApi } from '@shared/api'
+import { baseApi } from 'shared/api'
 import { Query } from './types'
 import { Post, Posts } from '../model/type'
-import { User } from '@entities/user/model/types'
-import { transformUser } from '@entities/user/lib/transformUser'
+import { User } from 'entities/user/model/types'
+import { transformUser } from 'entities/user/lib/transformUser'
 import { FetchBaseQueryError } from '@reduxjs/toolkit/query'
 
 export const postsApi = baseApi.injectEndpoints({
