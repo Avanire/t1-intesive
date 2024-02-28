@@ -6,9 +6,9 @@ import { transformComment } from 'entities/comments/lib/transformComment'
 
 export const commentsApi = baseApi.injectEndpoints({
     endpoints: (build) => ({
-        allComments: build.query<CommentsDto[], void>({
-            query: () => ({
-                url: 'comments',
+        allComments: build.query<CommentsDto[], number>({
+            query: (limit) => ({
+                url: `comments${limit && `?limit=${limit}`}`,
             }),
             transformResponse: (response: Comments) =>
                 response.comments.map(mapComments),
