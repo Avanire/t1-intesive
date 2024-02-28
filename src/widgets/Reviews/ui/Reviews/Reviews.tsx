@@ -1,4 +1,4 @@
-import { FC, useMemo } from 'react'
+import { FC } from 'react'
 import { Head } from '@shared/ui'
 import styles from './styles.module.css'
 import {
@@ -12,11 +12,9 @@ import './style.css'
 import Skeleton from 'react-loading-skeleton'
 
 export const Reviews: FC = () => {
-    const { isLoading } = useAllCommentsQuery()
+    const { isLoading } = useAllCommentsQuery(6)
 
     const { comments = [] } = useAppSelector(commentsSelector)
-
-    const firstSixComments = useMemo(() => comments.slice(0, 6), [comments])
 
     const settingsSlider = {
         dots: true,
@@ -52,7 +50,7 @@ export const Reviews: FC = () => {
                 <Skeleton width={'100%'} height={150} />
             ) : (
                 <Slider {...settingsSlider}>
-                    {firstSixComments.map((comment) => (
+                    {comments.map((comment) => (
                         <CommentsCard
                             key={comment.id}
                             name={comment.username}
